@@ -1,0 +1,15 @@
+#!/bin/bash -e
+
+if [[ $# -ne 1 ]] || [[ -z "$1" ]]; then
+  echo "usage: fresh open [user/repo]" >&2
+  exit 1
+fi
+
+DIRECTORY="$FRESH_PATH/source/$1"
+
+if ! [[ -d "$DIRECTORY" ]]; then
+  "$DIRECTORY does not exist" >&2
+  exit 1
+fi
+
+"$EDITOR" "$DIRECTORY"
