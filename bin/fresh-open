@@ -1,11 +1,18 @@
 #!/bin/bash -e
 
-if [[ $# -ne 1 ]] || [[ -z "$1" ]]; then
+FRESH_PATH="${FRESH_PATH:-$HOME/.fresh}"
+FRESH_LOCAL="${FRESH_LOCAL:-$HOME/.dotfiles}"
+
+if [[ $# -gt 1 ]] || [[ "$1" == -* ]]; then
   echo "usage: fresh open [user/repo]" >&2
   exit 1
 fi
 
-DIRECTORY="$FRESH_PATH/source/$1"
+if [[ -n "$1" ]]; then
+  DIRECTORY="$FRESH_PATH/source/$1"
+else
+  DIRECTORY="$FRESH_LOCAL"
+fi
 
 if ! [[ -d "$DIRECTORY" ]]; then
   echo fresh open: "$DIRECTORY does not exist" >&2
