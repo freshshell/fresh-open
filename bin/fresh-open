@@ -20,4 +20,4 @@ if ! [[ -d "$DIRECTORY" ]]; then
 fi
 
 cd "$DIRECTORY"
-"$EDITOR" "$DIRECTORY"
+exec "$EDITOR" "$DIRECTORY"
