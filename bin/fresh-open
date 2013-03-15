@@ -12,4 +12,5 @@ if ! [[ -d "$DIRECTORY" ]]; then
   exit 1
 fi
 
+cd "$DIRECTORY"
 "$EDITOR" "$DIRECTORY"
