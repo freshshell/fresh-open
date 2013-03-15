@@ -8,7 +8,7 @@ fi
 DIRECTORY="$FRESH_PATH/source/$1"
 
 if ! [[ -d "$DIRECTORY" ]]; then
-  "$DIRECTORY does not exist" >&2
+  echo fresh open: "$DIRECTORY does not exist" >&2
   exit 1
 fi
 
