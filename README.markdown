@@ -20,12 +20,11 @@ Paste the following line into your shell or add it to your `~/.freshrc` file.
 fresh freshshell/fresh-open bin/fresh-open --bin
 ```
 
-[manual install instructions]: https://github.com/freshshell/fresh#manual-steps
-
-
 ## Usage
 
 ``` sh
 fresh open freshshell/fresh-open # will open this codebase in your $EDITOR
 fresh open freshshell/fresh # will open the fresh codebase in your $EDITOR
 ```
+
+[manual install instructions]: https://github.com/freshshell/fresh#manual-steps
