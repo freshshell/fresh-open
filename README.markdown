@@ -25,7 +25,7 @@ fresh freshshell/fresh-open bin/fresh-open --bin
 
 ## Usage
 
-```
+``` sh
 fresh open freshshell/fresh-open # will open this codebase in your $EDITOR
 fresh open freshshell/fresh # will open the fresh codebase in your $EDITOR
 ```
