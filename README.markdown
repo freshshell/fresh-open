@@ -20,6 +20,15 @@ Paste the following line into your shell or add it to your `~/.freshrc` file.
 fresh freshshell/fresh-open bin/fresh-open --bin
 ```
 
+#### cdf
+
+There is also a function you can use to change into the source directory.
+To use it you will need to add the following line to your freshrc.
+
+``` sh
+fresh freshshell/fresh-open shell/cdf.sh
+```
+
 ## Usage
 
 ``` sh
